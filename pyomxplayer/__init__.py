@@ -13,7 +13,7 @@ class OMXPlayer(object):
     _DURATION_REGEX = re.compile(b'Duration: (.+?):(.+?):(.+?),')
     _TITLE_REGEX = re.compile(b'title           : (.+?)\r\n')
 
-    _LAUNCH_CMD      = 'omxplayer -s %s %s'
+    _LAUNCH_CMD      = 'omxplayer -s "%s" %s'
     _INFO_CMD    = 'omxplayer -i %s'
     _PAUSE_CMD       = 'p'
     _TOGGLE_SUB_CMD  = 's'
